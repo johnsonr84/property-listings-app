@@ -43,7 +43,7 @@ export function Navbar() {
             href="/"
             className="flex items-center gap-2.5 transition-opacity duration-200 hover:opacity-80"
           >
-            <div className="flex h-9 w-9 items-center justify-center rounded-lg bg-primary">
+            <div className="flex h-9 w-9 items-center justify-center rounded-lg bg-cyan-500">
               <Home
                 className="h-5 w-5 text-primary-foreground"
                 aria-hidden="true"
@@ -60,7 +60,7 @@ export function Navbar() {
           >
             <Link
               href="/properties"
-              className="px-4 py-2 text-sm font-medium text-muted-foreground rounded-lg hover:text-foreground hover:bg-accent transition-[color,background-color] duration-200"
+              className="px-4 py-2 text-lg font-medium text-muted-foreground rounded-lg hover:text-foreground hover:bg-accent transition-[color,background-color] duration-200"
             >
               Browse Properties
             </Link>
@@ -70,7 +70,7 @@ export function Navbar() {
                 fallback={
                   <Link
                     href="/pricing"
-                    className="px-4 py-2 text-sm font-medium text-muted-foreground rounded-lg hover:text-foreground hover:bg-accent transition-[color,background-color] duration-200"
+                    className="px-4 py-2 text-lg font-medium text-muted-foreground rounded-lg hover:text-foreground hover:bg-accent transition-[color,background-color] duration-200"
                   >
                     Become an Agent
                   </Link>
@@ -78,7 +78,7 @@ export function Navbar() {
               >
                 <Link
                   href="/dashboard"
-                  className="px-4 py-2 text-sm font-medium text-muted-foreground rounded-lg hover:text-foreground hover:bg-accent transition-[color,background-color] duration-200"
+                  className="px-4 py-2 text-lg font-medium text-muted-foreground rounded-lg hover:text-foreground hover:bg-accent transition-[color,background-color] duration-200"
                 >
                   Dashboard
                 </Link>
@@ -87,7 +87,7 @@ export function Navbar() {
             <SignedOut>
               <Link
                 href="/pricing"
-                className="px-4 py-2 text-sm font-medium text-muted-foreground rounded-lg hover:text-foreground hover:bg-accent transition-[color,background-color] duration-200"
+                className="px-4 py-2 text-lg font-medium text-muted-foreground rounded-lg hover:text-foreground hover:bg-accent transition-[color,background-color] duration-200"
               >
                 Become an Agent
               </Link>
@@ -133,12 +133,12 @@ export function Navbar() {
           </SignedIn>
           <SignedOut>
             <SignInButton mode="modal">
-              <Button variant="ghost" size="sm">
+              <Button variant="ghost" size="lg">
                 Sign In
               </Button>
             </SignInButton>
             <SignUpButton mode="modal">
-              <Button size="sm">Get Started</Button>
+              <Button size="lg">Get Started</Button>
             </SignUpButton>
           </SignedOut>
         </div>
