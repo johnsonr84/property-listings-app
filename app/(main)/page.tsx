@@ -178,14 +178,14 @@ export default async function HomePage() {
 
             {/* Step 2 */}
             <div className="relative text-center group">
-              <div className="w-20 h-20 bg-background border-2 border-secondary/20 rounded-2xl flex items-center justify-center mx-auto mb-6 shadow-warm transition-[transform,box-shadow] duration-300 group-hover:-translate-y-1 group-hover:shadow-warm-md group-hover:border-secondary/40">
-                <Heart className="h-9 w-9 text-secondary" aria-hidden="true" />
+              <div className="w-20 h-20 bg-background border-2 border-primary/20 rounded-2xl flex items-center justify-center mx-auto mb-6 shadow-warm transition-[transform,box-shadow] duration-300 group-hover:-translate-y-1 group-hover:shadow-warm-md group-hover:border-secondary/40">
+                <Heart className="h-9 w-9 text-primary" aria-hidden="true" />
               </div>
               <div
                 className="absolute top-10 left-[60%] right-0 h-px bg-border hidden md:block"
                 aria-hidden="true"
               />
-              <span className="inline-block px-3 py-1 rounded-full bg-secondary/10 text-secondary-foreground text-sm font-medium mb-3">
+              <span className="inline-block px-3 py-1 rounded-full bg-primary/10 text-secondary-foreground text-sm font-medium mb-3">
                 Step 2
               </span>
               <h3 className="text-xl font-semibold font-heading mb-3">
@@ -254,9 +254,9 @@ export default async function HomePage() {
                 </div>
 
                 <div className="flex gap-4">
-                  <div className="flex-shrink-0 w-12 h-12 rounded-xl bg-secondary/10 flex items-center justify-center">
+                  <div className="flex-shrink-0 w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center">
                     <Users
-                      className="h-6 w-6 text-secondary"
+                      className="h-6 w-6 text-primary"
                       aria-hidden="true"
                     />
                   </div>
