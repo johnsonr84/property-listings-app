@@ -33,7 +33,7 @@ const isSanityLiveEnabled = Boolean(
 
 export const metadata: Metadata = {
   title: {
-    default: "Dwellio | Find Your Perfect Home",
+    default: "Dwellio | Find Your Perfect Dwellio",
     template: "%s | Dwellio",
   },
   description:
@@ -55,13 +55,13 @@ export const metadata: Metadata = {
     type: "website",
     locale: "en_US",
     siteName: "Dwellio",
-    title: "Dwellio | Find Your Perfect Home",
+    title: "Dwellio | Find Your Perfect Dwellio",
     description:
       "Making your first home journey simple and stress-free. Browse properties, save favorites, and connect with trusted agents.",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Dwellio | Find Your Perfect Home",
+    title: "Dwellio | Find Your Perfect Dwellio",
     description:
       "Making your first home journey simple and stress-free. Browse properties, save favorites, and connect with trusted agents.",
   },
