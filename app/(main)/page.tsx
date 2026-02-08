@@ -38,7 +38,7 @@ export default async function HomePage() {
             </div>
 
             <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold font-heading tracking-tight mb-6">
-              Find Your <span className="text-primary">Perfect Nest</span>
+              Find Your <span className="text-primary">Perfect Dwellio</span>
             </h1>
             <p className="text-lg md:text-xl text-muted-foreground mb-10 max-w-2xl mx-auto">
               Making your first home journey simple and stress-free. Browse
@@ -149,7 +149,7 @@ export default async function HomePage() {
               How Dwellio Works
             </h2>
             <p className="text-muted-foreground mt-3 max-w-2xl mx-auto">
-              Finding your first home has never been easier. Follow these simple
+              Finding your first dwellio has never been easier. Follow these simple
               steps to start your journey.
             </p>
           </div>

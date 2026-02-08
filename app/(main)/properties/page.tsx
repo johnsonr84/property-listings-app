@@ -24,7 +24,7 @@ import {
 export const metadata: Metadata = {
   title: "Browse Properties",
   description:
-    "Find your perfect home from our curated selection of properties. Filter by price, bedrooms, location, and more.",
+    "Find your perfect dwellio from our curated selection of properties. Filter by price, bedrooms, location, and more.",
 };
 
 const ITEMS_PER_PAGE = 12;
@@ -149,7 +149,7 @@ export default async function PropertiesPage({
             Browse Properties
           </h1>
           <p className="text-muted-foreground mt-2">
-            Find your perfect nest from our curated selection
+            Find your perfect dwellio from our curated selection
           </p>
         </div>
       </div>
