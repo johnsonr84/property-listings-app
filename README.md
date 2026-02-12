@@ -1,36 +1,289 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 🏡 Dwellio – Modern Real Estate Platform
 
-## Getting Started
+![Next.js](https://img.shields.io/badge/Next.js-16-black?logo=next.js)
+![React](https://img.shields.io/badge/React-19-61DAFB?logo=react)
+![TypeScript](https://img.shields.io/badge/TypeScript-5-blue?logo=typescript)
+![TailwindCSS](https://img.shields.io/badge/TailwindCSS-4-38B2AC?logo=tailwindcss)
+![Clerk](https://img.shields.io/badge/Auth-Clerk-6C47FF?logo=clerk)
+![Sanity](https://img.shields.io/badge/CMS-Sanity-F03E2F?logo=sanity)
+![Mapbox](https://img.shields.io/badge/Maps-Mapbox-000000?logo=mapbox)
+![License](https://img.shields.io/badge/License-MIT-green)
 
-First, run the development server:
+Dwellio is a modern real estate platform designed to make buying your first home simple and stress-free.
+
+It provides a clean, intuitive property search experience for homebuyers and a powerful listing and lead management dashboard for real estate agents.
+
+---
+
+## 🖼️ Screenshots
+
+### 🏠 Hero & First Impression
+| Landing Page |
+|-------------|
+| ![Hero](public/screenshots/hero.png) |
+
+### ⚙️ How It Works
+| Process Overview |
+|------------------|
+| ![How It Works](public/screenshots/how-it-works.png) |
+
+### ⭐ Why Dwellio
+| Value Proposition |
+|-------------------|
+| ![Why Dwellio](public/screenshots/why-dwellio.png) |
+
+### 🏘️ Property Discovery
+| Featured Listings |
+|-------------------|
+| ![Featured Properties](public/screenshots/featured-properties.png) |
+
+### 📄 Property Details
+| Listing Page |
+|--------------|
+| ![Property Listing](public/screenshots/property-listing.png) |
+
+### 🗺️ Interactive Map
+| Map View |
+|----------|
+| ![Mapbox Map](public/screenshots/mapbox-map.png) |
+
+---
+
+## 🎯 Who Is This For?
+
+**First-time homebuyers**
+- Clean, simple property search
+- Real-time listings and maps
+- Save favorites and contact agents
+
+**Real estate agents**
+- List and manage properties
+- Track leads and analytics
+- Manage subscriptions and profile
+
+---
+
+## ⚡ What Problem Does It Solve?
+
+Traditional real estate platforms are cluttered and overwhelming.
+
+**Dwellio focuses on:**
+- Clean, modern UI
+- Real-time content updates
+- Interactive map-based search
+- Seamless agent subscription system
+
+---
+
+## 🔥 Technical Highlights
+
+- Real-time content with **Sanity Live**
+- **Sanity Studio** as a built-in admin dashboard
+- **Clerk Billing** integration (no webhooks required)
+- Interactive **Mapbox** maps with markers
+- Type-safe schemas with auto-generated TypeScript
+- Server Actions + Server Components
+- React 19 + React Compiler optimizations
+
+---
+
+## ✨ Features
+
+### For Homebuyers (Free)
+
+| Feature | Description |
+|--------|-------------|
+| 🔍 Advanced Search | Filter by price, beds, baths, type, and amenities |
+| 🗺️ Interactive Map | View properties with Mapbox price markers |
+| 💾 Save Favorites | Build a list of saved properties |
+| 📧 Contact Agents | Message listing agents directly |
+| 🖼️ Image Galleries | Browse high-quality photos |
+| 📱 Responsive Design | Works across all devices |
+
+---
+
+### For Real Estate Agents ($29/month)
+
+| Feature | Description |
+|--------|-------------|
+| 📊 Analytics Dashboard | Track views, leads, and performance |
+| 🏠 Unlimited Listings | Create and manage properties |
+| 📬 Lead Inbox | Manage buyer inquiries |
+| 📍 Address Autocomplete | Mapbox-powered geocoding |
+| ✏️ Listing Management | Update status and details |
+| 👤 Professional Profile | Showcase credentials and bio |
+| 💳 Billing Management | Subscription via Clerk |
+
+---
+
+### Technical Features
+
+| Feature | Why It Matters |
+|--------|----------------|
+| 🔄 Real-Time Updates | Sanity Live pushes changes instantly |
+| 🎛️ Sanity Studio | Admin dashboard at `/studio` |
+| 📐 Schema + Typegen | Auto-generate TypeScript types |
+| 💳 Clerk Billing | Subscription management without webhooks |
+| 🗄️ Type-Safe Queries | GROQ with generated types |
+| ⚙️ Server Actions | Secure server-side form handling |
+| 🎨 React 19 + Compiler | Automatic performance optimizations |
+| 📍 Geocoding | Mapbox address autocomplete |
+| 📈 Analytics Charts | Recharts data visualization |
+
+---
+
+## 🧰 Tech Stack
+
+- **Framework:** Next.js (App Router)
+- **Frontend:** React 19, Tailwind CSS, Radix UI
+- **Auth & Billing:** Clerk
+- **CMS:** Sanity
+- **Maps & Geocoding:** Mapbox
+- **Type Safety:** TypeScript + Zod
+- **Charts:** Recharts
+
+---
+
+## 🚀 Getting Started
+
+### Prerequisites
+- Node.js 20+
+- pnpm or npm
+- Clerk account with Billing
+- Sanity project
+- Mapbox access token
+
+---
+
+### 1. Clone the Repository
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+git clone https://github.com/your-username/nestwell.git
+cd nestwell
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### 2. Install Dependencies
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+```bash
+pnpm install
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+### 3. Set Up Environment Variables
 
-## Learn More
+Create a `.env.local` file:
 
-To learn more about Next.js, take a look at the following resources:
+```env
+# Clerk
+NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY=pk_test_xxxxx
+CLERK_SECRET_KEY=sk_test_xxxxx
+NEXT_PUBLIC_CLERK_SIGN_IN_URL=/sign-in
+NEXT_PUBLIC_CLERK_SIGN_UP_URL=/sign-up
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+# Sanity
+NEXT_PUBLIC_SANITY_PROJECT_ID=your-project-id
+NEXT_PUBLIC_SANITY_DATASET=production
+SANITY_API_TOKEN=your-write-token
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+# Mapbox
+NEXT_PUBLIC_MAPBOX_TOKEN=pk.xxxxx
+MAPBOX_ACCESS_TOKEN=pk.xxxxx
 
-## Deploy on Vercel
+# App URL
+NEXT_PUBLIC_APP_URL=http://localhost:3000
+```
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+⚠️ Never commit `.env.local` to version control.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+---
+
+### 4. Generate Types
+
+```bash
+pnpm typegen
+```
+
+---
+
+### 5. Run the Development Server
+
+```bash
+pnpm dev
+```
+
+Open:
+
+```
+http://localhost:3000
+```
+
+---
+
+### 6. Access Sanity Studio
+
+```
+http://localhost:3000/studio
+```
+
+Manage:
+- Properties
+- Agents
+- Leads
+- Amenities
+
+---
+
+## 🗄️ Database Schema Overview
+
+| Collection | Purpose |
+|-----------|---------|
+| property | Property listings |
+| agent | Agent profiles |
+| user | Homebuyer profiles |
+| lead | Buyer inquiries |
+| amenity | Property amenities |
+
+---
+
+## 🚢 Deployment
+
+### Vercel CLI
+
+```bash
+pnpm i -g vercel
+vercel
+```
+
+### GitHub Integration
+
+1. Push to GitHub
+2. Import into Vercel
+3. Add environment variables
+4. Deploy
+
+---
+
+## ❓ Common Issues
+
+| Problem | Solution |
+|--------|----------|
+| Sanity project undefined | Check `.env.local` |
+| Types not generating | Run `pnpm typegen` |
+| Maps not showing | Verify Mapbox token |
+| Billing not working | Enable in Clerk Dashboard |
+| No properties visible | Run `pnpm seed` |
+
+---
+
+## 📄 License
+
+MIT License — feel free to use, modify, and build on top of this project.
+
+---
+## 👨‍💻 Author
+
+**Robert Johnson**  
+Full-Stack & AI Engineer  
+GitHub: https://github.com/johnsonr84
+
+**Built with precision by Rob Johnson**  
+_Engineering modern SaaS products with real-world complexity._
