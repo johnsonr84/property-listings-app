@@ -33,13 +33,13 @@ export function Footer() {
               href="/"
               className="flex items-center gap-2.5 mb-4 w-fit transition-opacity duration-200 hover:opacity-80"
             >
-              <div className="flex h-9 w-9 items-center justify-center rounded-lg bg-primary">
+              <div className="flex h-9 w-9 items-center justify-center rounded-lg bg-cyan-500">
                 <Home
                   className="h-5 w-5 text-primary-foreground"
                   aria-hidden="true"
                 />
               </div>
-              <span className="text-xl font-bold font-heading tracking-tight">
+              <span className="text-xl bg-cyan-500font-bold font-heading tracking-tight">
                 Dwellio
               </span>
             </Link>
@@ -71,7 +71,7 @@ export function Footer() {
                 <Button
                   type="submit"
                   disabled={isSubmitting}
-                  className="h-11 px-4"
+                  className="h-11 px-4 bg-cyan-500"
                 >
                   {isSubmitting ? (
                     <span className="flex items-center gap-2">
