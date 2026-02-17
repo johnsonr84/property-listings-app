@@ -152,7 +152,7 @@ export default async function HomePage() {
       <section className="py-20 md:py-28 bg-accent/30">
         <div className="container">
           <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold font-heading">
+            <h2 className="text-3xl md:text-4xl font-bold text-cyan-500 font-heading">
               How Dwellio Works
             </h2>
             <p className="text-muted-foreground mt-3 max-w-2xl mx-auto">
@@ -299,7 +299,7 @@ export default async function HomePage() {
             </div>
 
             {/* Stats Card */}
-            <div className="bg-gradient-to-br from-primary to-primary/80 rounded-3xl p-8 md:p-12 text-primary-foreground">
+            <div className="bg-gradient-to-br from-primary bg-cyan-500 rounded-3xl p-8 md:p-12 text-primary-foreground">
               <h3 className="text-2xl md:text-3xl font-bold font-heading mb-8">
                 Trusted by Thousands
               </h3>
@@ -337,9 +337,9 @@ export default async function HomePage() {
       {/* CTA - Become an Agent */}
       <section className="py-20 md:py-28 bg-accent/30">
         <div className="container">
-          <div className="bg-gradient-to-r from-secondary/90 to-secondary rounded-3xl p-8 md:p-12 lg:p-16">
+          <div className="bg-gradient-to-r bg-cyan-500 from-secondary/90 to-secondary rounded-3xl p-8 md:p-12 lg:p-16">
             <div className="max-w-3xl">
-              <h2 className="text-3xl md:text-4xl font-bold font-heading mb-4 text-secondary-foreground">
+              <h2 className="text-3xl md:text-4xl  font-bold font-heading mb-4 text-secondary-foreground">
                 Are You a Real Estate Agent?
               </h2>
               <p className="text-lg text-secondary-foreground/80 mb-8">
